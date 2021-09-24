@@ -44,10 +44,12 @@ TestCaseTemplate {
         anchors.fill: imageSource
         radius: radiusSlider.value
         spread: spreadSlider.value
+        samples: samplesSlider.value
         color: colorPicker.color
         visible: enabledCheckBox.selected
         cached: cachedCheckBox.selected
         source: imageSource
+        fast: fastCheckBox.selected
     }
 
     PositionPicker {
@@ -76,11 +78,24 @@ TestCaseTemplate {
                 caption: "radius"
             }
             Slider {
+                id: samplesSlider
+                minimum: 0
+                maximum: 32
+                value: 32
+                integer: true
+                caption: "samples"
+            }
+            Slider {
                 id: spreadSlider
                 minimum: 0
                 maximum: 1.0
                 value: 0.0
                 caption: "spread"
+            }
+            CheckBox {
+                id: fastCheckBox
+                caption: "fast"
+                selected: false
             }
         },
 
