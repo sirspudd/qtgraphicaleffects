@@ -14,7 +14,14 @@ HEADERS += \
            qgfxsourceproxy_p.h
 
 QML_FILES = \
-    FastGlow.qml
+    DropShadowBase.qml \
+    FastGlow.qml \
+    FastInnerShadow.qml \
+    FastMaskedBlur.qml \
+    GaussianDirectionalBlur.qml \
+    GaussianGlow.qml \
+    GaussianInnerShadow.qml \
+    GaussianMaskedBlur.qml
 
 !static: CONFIG += qmlcache
 
