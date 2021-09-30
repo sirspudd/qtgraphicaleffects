@@ -68,9 +68,9 @@ Item {
         smooth: rootItem.blur > 0
     }
 
-    property string __internalBlurVertexShader: "qrc:/qt-project.org/imports/QtGraphicalEffects/shaders_ng/fastblur_internal.vert"
+    property string __internalBlurVertexShader: "qrc:/qt-project.org/imports/QtGraphicalEffects/shaders_ng/fastblur_internal.vert.qsb"
 
-    property string __internalBlurFragmentShader: "qrc:/qt-project.org/imports/QtGraphicalEffects/shaders_ng/fastblur_internal.frag"
+    property string __internalBlurFragmentShader: "qrc:/qt-project.org/imports/QtGraphicalEffects/shaders_ng/fastblur_internal.frag.qsb"
 
     ShaderEffect {
         id: mask0
@@ -242,6 +242,6 @@ Item {
         width: transparentBorder ? parent.width + 128 : parent.width
         height: transparentBorder ? parent.height + 128 : parent.height
 
-        fragmentShader: "qrc:/qt-project.org/imports/QtGraphicalEffects/shaders_ng/fastmaskedblur.frag"
+        fragmentShader: "qrc:/qt-project.org/imports/QtGraphicalEffects/shaders_ng/fastmaskedblur.frag.qsb"
     }
 }

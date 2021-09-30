@@ -272,9 +272,9 @@ Item {
         anchors.fill: verticalBlur
         visible: !verticalBlur.visible
 
-        vertexShader: "qrc:/qt-project.org/imports/QtGraphicalEffects/shaders_ng/recursiveblur.vert"
+        vertexShader: "qrc:/qt-project.org/imports/QtGraphicalEffects/shaders_ng/recursiveblur.vert.qsb"
 
-        fragmentShader: "qrc:/qt-project.org/imports/QtGraphicalEffects/shaders_ng/recursiveblur.frag"
+        fragmentShader: "qrc:/qt-project.org/imports/QtGraphicalEffects/shaders_ng/recursiveblur.frag.qsb"
     }
 
     ShaderEffectSource {
